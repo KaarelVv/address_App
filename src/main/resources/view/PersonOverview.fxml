@@ -52,7 +52,7 @@
                         <Label text="Birthday" GridPane.rowIndex="5" />
                         <Label fx:id="firstNameLabel" text="Label" GridPane.columnIndex="1" />
                         <Label fx:id="lastNameLabel" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-                        <Label text="Label" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                        <Label fx:id="streetLabel" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="2" />
                         <Label fx:id="cityLabel" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="3" />
                         <Label fx:id="postalCodeLabel" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="4" />
                         <Label fx:id="birthdayLabel" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="5" />
@@ -60,9 +60,9 @@
                   </GridPane>
                   <AnchorPane layoutX="231.0" layoutY="259.0" AnchorPane.bottomAnchor="5.0" AnchorPane.rightAnchor="5.0">
                      <children>
-                        <Button layoutX="120.0" mnemonicParsing="false" text="Delete" />
-                        <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="51.0" text="New" />
-                        <Button layoutX="61.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="51.0" text="Edit" />
+                        <Button layoutX="120.0" mnemonicParsing="false" onAction="#handleDeletePerson" text="Delete" />
+                        <Button mnemonicParsing="false" onAction="#handleNewPerson" prefHeight="25.0" prefWidth="51.0" text="New" />
+                        <Button layoutX="61.0" mnemonicParsing="false" onAction="#handleEditPerson" prefHeight="25.0" prefWidth="51.0" text="Edit" />
                      </children>
                   </AnchorPane>
                </children>
