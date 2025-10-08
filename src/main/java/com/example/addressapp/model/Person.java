@@ -1,5 +1,7 @@
 package com.example.addressapp.model;
 
+import com.example.addressapp.util.LocalDateAdapter;
+import jakarta.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 import javafx.beans.property.*;
 
 import java.time.LocalDate;
@@ -96,6 +98,7 @@ public class Person {
         return city;
     }
 
+    @XmlJavaTypeAdapter(LocalDateAdapter.class)
     public LocalDate getBirthday() {
         return birthday.get();
     }
